@@ -1,0 +1,71 @@
+body {
+	font-family: Arial, sans-serif;
+    }
+    
+    header {
+	position: relative;
+    }
+
+    #banner {
+        position: relative;
+        width: 100%;
+        overflow: hidden; /* Evita que o conteúdo vaze do container */
+        height: auto;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: auto; /* Faz com que a altura seja ajustada conforme a proporção da imagem */
+    }
+
+    /* Ajustes responsivos para garantir que imagens grandes se comportem bem em diferentes telas */
+    @media (max-width: 768px) {
+        .swiper-slide img {
+            height: auto;
+            width: 100%; /* Garante que a imagem se ajuste em telas menores */
+        }
+    }
+#logo{
+    width: 180px;
+    height: 50px;
+}
+.btn-orange {
+    background-color: darkorange;
+
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: orange;
+    color: white;
+}
+    .swiper-container {
+	height: 400px;
+    }
+    
+    .swiper-slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    }
+    
+    #servicos-cards {
+	display: flex;
+	flex-wrap: wrap;
+    }
+    
+    .card {
+	margin: 10px;
+	flex: 1 1 calc(33% - 20px);
+    }
+    
+    footer {
+	text-align: center;
+    }
+    
