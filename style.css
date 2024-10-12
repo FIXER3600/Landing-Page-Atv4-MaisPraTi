@@ -13,11 +13,11 @@ body {
         height: auto;
     }
 
-    .swiper-slide {
+    /* .swiper-slide {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
     .swiper-slide img {
         width: 100%;
@@ -31,6 +31,101 @@ body {
             width: 100%; /* Garante que a imagem se ajuste em telas menores */
         }
     }
+
+
+.swiper-slide {
+    position: relative;
+}
+
+/* Contêiner da logo e botão */
+.logo-container-dbsz {
+    position: absolute;
+    bottom: 200px; /* Ajustado para ficar mais para baixo */
+    right: 100px;  /* Ajustado para ficar mais ao centro da direita */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-container-nc {
+    position: absolute;
+    bottom: 100px; /* Ajustado para ficar mais para baixo */
+    right: 340px;  /* Ajustado para ficar mais ao centro da direita */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-container-tekken {
+    position: absolute;
+    bottom: 100px; /* Ajustado para ficar mais para baixo */
+    right: 600px;  /* Ajustado para ficar mais ao centro da direita */
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.game-logo {
+    max-width: 600px; /* Aumentado o tamanho da logo */
+    height: auto;
+    margin-bottom: 20px; /* Espaço entre a logo e o botão */
+}
+
+/* Botão Saiba Mais */
+.saiba-mais-btn-dbsz {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+.saiba-mais-btn-dbsz:hover {
+    background-color: #ff9900; /* Cor ao passar o mouse */
+}
+.saiba-mais-btn-nc {
+    background: linear-gradient(to bottom, #ff9900, #ff6600); /* Gradiente laranja */
+    color: white; /* Cor do texto */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px 20px; /* Espaçamento interno */
+    font-weight: bold; /* Texto em negrito */
+    border: none; /* Sem bordas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+    transition: all 0.3s ease; /* Transição suave para o hover */
+}
+.saiba-mais-btn-nc:hover {
+    background: linear-gradient(to bottom, #ff7700, #ff5500); /* Alteração da cor no hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a sombra no hover */
+    text-decoration: none; /* Remove o sublinhado ao passar o mouse */
+}
+
+.saiba-mais-btn-tekken {
+    background-image: url('https://media.graphassets.com/wmUXvGMkRKSNw65fgxuK');
+    background-size: cover; /* Garante que a imagem cubra todo o botão */
+    background-position: center; /* Centraliza a imagem de fundo */
+    color: white; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+    padding: 10px 30px; /* Espaçamento interno do botão */
+    border: none; /* Remove bordas */
+    text-transform: uppercase; /* Coloca o texto em maiúsculas */
+    font-family: 'Arial', sans-serif; /* Fonte padrão */
+    display: inline-block;
+    text-align: center; /* Centraliza o texto */
+    transition: all 0.3s ease; /* Efeito suave ao passar o mouse */
+    border-radius: 8px; /* Bordas arredondadas para um visual mais agradável */
+    width: auto; /* Ajusta a largura de acordo com o conteúdo */
+    height: auto; /* Ajusta a altura de acordo com o conteúdo */
+}
+
+
+/* Efeito ao passar o mouse */
+.saiba-mais-btn-tekken:hover {
+    background-color: #ff3366; /* Altera a cor ao passar o mouse */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
 #logo{
     width: 180px;
     height: 50px;
@@ -59,7 +154,19 @@ body {
 	display: flex;
 	flex-wrap: wrap;
     }
-    
+    #sobre{
+      background-image: url('https://media.graphassets.com/FSsJAl3dSdGD9uNA86IC');  
+      height: 100vh;
+      flex-direction: column;
+      display:flex;
+      align-items: center; 
+      justify-content: center;
+      color: #fff;
+    }
+    #sobre p:nth-of-type(2) {
+        width: 80%; /* Ajuste a largura como preferir */
+        margin: 0 auto; /* Centraliza o parágrafo */
+    }
     .card {
 	margin: 10px;
 	flex: 1 1 calc(33% - 20px);

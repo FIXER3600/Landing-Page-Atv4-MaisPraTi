@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.0/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -29,19 +30,26 @@
 <section id="banner" class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
-            <a href="https://dragonballsparkingzero.com/" target="_blank">
             <img src="./assets/dbz-banner.webp" alt="Banner 1" class="img-fluid">
-        </a>
+            <!-- Adicionando o contêiner da logo e botão -->
+            <div class="logo-container-dbsz">
+                <img src="./assets/dbsz-logo.webp" alt="Dragon Ball Sparking Zero Logo" class="game-logo">
+                <a href="https://dragonballsparkingzero.com/" class="btn saiba-mais-btn-dbsz" target="_blank">Saiba Mais</a>
+            </div>
+           
         </div>
         <div class="swiper-slide">
-            <a href="https://www.bandainamcoent.com/games/naruto-x-boruto-ultimate-ninja-storm-connections" target="_blank" rel="noopener noreferrer">
             <img src="./assets/naruto-patch.webp" alt="Banner 2" class="img-fluid">
-        </a>
+            <div class="logo-container-nc">
+                <a href="https://www.bandainamcoent.com/games/naruto-x-boruto-ultimate-ninja-storm-connections" class="btn saiba-mais-btn-nc" target="_blank">Saiba Mais</a>
+            </div>
         </div>
         <div class="swiper-slide">
-            <a href="https://tekken.com/" target="_blank" rel="noopener noreferrer">
             <img src="./assets/tekken8.png" alt="Banner 3" class="img-fluid">
-        </a>
+
+            <div class="logo-container-tekken">
+                <a href="https://tekken.com/" class="btn saiba-mais-btn-tekken" target="_blank">Saiba Mais</a>
+            </div>
         </div>
     </div>
     <div class="swiper-button-next"></div>
@@ -49,9 +57,11 @@
     <div class="swiper-pagination"></div>
 </section>
 
-<section id="sobre" class="container my-5">
-    <h2>Sobre Nós</h2>
-    <p>Breve descrição sobre a empresa.</p>
+<section id="sobre" >
+  <img src="./assets/about-purpose.png" alt=""><br/>
+  <p>A <strong>Bandai Namco</strong> existe para compartilhar sonhos, diversão e inspiração com pessoas ao redor do mundo.</p><br/>
+    <p>A <strong>Bandai Namco</strong> é uma das principais empresas de entretenimento do mundo, reconhecida por criar franquias de sucesso global, como Pac-Man, Tekken, Dragon Ball e Dark Souls. Desde nossa formação, com a fusão da Bandai e Namco em 2006, temos expandido nossas atividades para além dos videogames, atuando também no desenvolvimento de brinquedos, animes e experiências em parques temáticos. Nosso compromisso é liderar a indústria do entretenimento, oferecendo inovação e diversão para pessoas de todas as idades ao redor do mundo.
+    </p>
 </section>
 
 <section id="servicos" class="container my-5">
@@ -124,6 +134,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.0/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
