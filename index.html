@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.0/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -16,11 +21,11 @@
     <div class="container d-flex justify-content-between align-items-center">
         <img src="assets/logo.png" alt="Logo" srcset="" id="logo">
         <nav class="">
-            <ul class="d-flex justify-content-evenly list-unstyled">
-                <li class="mx-5 "><a class="text-white" href="#sobre">Sobre</a></li>
-                <li class="mx-5"><a class="text-white" href="#servicos">Serviços</a></li>
-                <li class="mx-5"><a class="text-white" href="#testemunhos">Testemunhos</a></li>
-                <li class="mx-5"><a class="text-white" href="#contato">Contato</a></li>
+            <ul class="d-flex justify-content-evenly list-unstyled" >
+                <li class="mx-5"><a class="text-white" href="#servicos" style="text-decoration: none;">Serviços</a></li>
+                <li class="mx-5"><a class="text-white" href="#testemunhos" style="text-decoration: none;">Testemunhos</a></li>
+                <li class="mx-5 "><a class="text-white" href="#sobre" style="text-decoration: none;">Sobre</a></li>
+                <li class="mx-5"><a class="text-white" href="#contato" style="text-decoration: none;">Contato</a></li>
             </ul>
         </nav>
         <a href="#contato" class="btn btn-orange">Entre em Contato</a>
@@ -57,15 +62,10 @@
     <div class="swiper-pagination"></div>
 </section>
 
-<section id="sobre" >
-  <img src="./assets/about-purpose.png" alt=""><br/>
-  <p>A <strong>Bandai Namco</strong> existe para compartilhar sonhos, diversão e inspiração com pessoas ao redor do mundo.</p><br/>
-    <p>A <strong>Bandai Namco</strong> é uma das principais empresas de entretenimento do mundo, reconhecida por criar franquias de sucesso global, como Pac-Man, Tekken, Dragon Ball e Dark Souls. Desde nossa formação, com a fusão da Bandai e Namco em 2006, temos expandido nossas atividades para além dos videogames, atuando também no desenvolvimento de brinquedos, animes e experiências em parques temáticos. Nosso compromisso é liderar a indústria do entretenimento, oferecendo inovação e diversão para pessoas de todas as idades ao redor do mundo.
-    </p>
-</section>
+
 
 <section id="servicos" class="container my-5">
-    <h2>Nossos Serviços</h2>
+    <h2>Nossos Jogos</h2>
     <div class="row" id="servicos-cards"></div>
 </section>
 
@@ -73,10 +73,20 @@
     <h2>Testemunhos</h2>
     <div id="testemunhos-list" class="row"></div>
 </section>
+<section id="sobre" >
 
-<section id="contato" class="container my-5">
-    <h2>Contato</h2>
+    <img src="./assets/about-purpose.png" alt=""><br/>
+    <p>A <strong>Bandai Namco</strong> existe para compartilhar sonhos, diversão e inspiração com pessoas ao redor do mundo.</p><br/>
+      <p>A <strong>Bandai Namco</strong> é uma das principais empresas de entretenimento do mundo, reconhecida por criar franquias de sucesso global, como Pac-Man, Tekken, Dragon Ball e Dark Souls. Desde nossa formação, com a fusão da Bandai e Namco em 2006, temos expandido nossas atividades para além dos videogames, atuando também no desenvolvimento de brinquedos, animes e experiências em parques temáticos. Nosso compromisso é liderar a indústria do entretenimento, oferecendo inovação e diversão para pessoas de todas as idades ao redor do mundo.
+      </p>
+  </section>
+<section id="contato" class="">
+   
+    <div id="contact-container">
+       
+    <img src="./assets/king-contact.webp" alt="" srcset="">
     <form id="contact-form">
+        <h2>Contato</h2>
         <div class="mb-3">
             <label for="nome" class="form-label">Nome</label>
             <input type="text" class="form-control" id="nome" required>
@@ -95,16 +105,17 @@
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
+</div>
 </section>
 
-<footer class="bg-dark p-3">
-    <div class="container d-flex justify-content-between">
+<footer class=" p-3">
+    <div class=" d-flex justify-content-between m-5">
         <div class="mx-auto my-auto">
             <img src="assets/logo.png" alt="Logo" srcset="" id="logo">    
         </div>
 
         <div class="d-flex">
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column m-5">
                 <p class="text-white-50">
                     <ul class="d-flex">
                         <li class="mx-5"><a class="text-white-50" href="https://www.bandainamcoent.com/legal/terms">Terms of Service</a></li> 
@@ -119,11 +130,11 @@
             </div>
             <div>
                 <h3 class="text-white">Siga-nos</h3>
-                <ul class="d-flex flex-column" >
-                    <li class="mx-5"><a class="text-white-50" href="https://www.bandainamcoent.com/legal/terms">Terms of Service</a></li> 
-                    <li class="mx-5"><a class="text-white-50" href="https://www.bandainamcoent.com/legal/privacy">Privacy Policy</a></li> 
-                    <li class="mx-5"><a class="text-white-50" href="https://www.bandainamcoent.com/legal/community-events">Community Events</a></li> 
-                    <li class="mx-5"><a class="text-white-50" href="https://www.bandainamcoent.com/legal">Legal</a></li> 
+                <ul class="d-flex flex-column p-3" >
+                    <li class="m-2"><a class="text-white-50" href="https://www.facebook.com/BandaiNamcoUS"><i class="fa-brands fa-facebook fa-2xl"></i></a></li> 
+                    <li class="m-2"><a class="text-white-50" href="https://www.instagram.com/bandainamcous"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
+                    <li class="m-2"><a class="text-white-50" href="https://twitter.com/BandaiNamcoUS"><i class="fa-brands fa-twitter fa-2xl"></i></a></li> 
+                    <li class="m-2"><a class="text-white-50" href="https://www.youtube.com/channel/UC_ntXHv-XdKCD7CPynVvnQw"><i class="fa-brands fa-youtube fa-2xl"></i></a></li> 
                 </ul>     
             </div>
         </div>

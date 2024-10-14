@@ -1,5 +1,5 @@
 body {
-	font-family: Arial, sans-serif;
+	font-family:  "Source Sans 3", sans-serif;
     }
     
     header {
@@ -174,5 +174,114 @@ body {
     
     footer {
 	text-align: center;
+    background-color: #000;
     }
     
+/****************CARDS STYLES *********************/
+.servicos-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-size: cover; /* Garante que a imagem cubra todo o card */
+    background-position: center; /* Centraliza a imagem no card */    
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+
+    padding: 0;
+    border-radius: 15px;
+    box-shadow: 5 2px 2px rgba(0, 0, 0, 0.1);
+    width: auto;
+    height:auto; /* Define a altura do card */
+    overflow: hidden;
+    position: relative; /* Necessário para o conteúdo */
+    transition: transform 0.3s ease;
+}
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.card-content p {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #fff;
+}
+
+/* Botões do card */
+.card-buttons {
+    display: flex;
+    gap: 10px;
+   justify-content: space-between;
+}
+.card-image{
+  
+    max-width: 300px;
+    max-height: 300px;
+}
+.btn {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color:#F6B700;
+    color: #000;
+}
+
+.learn-more {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.learn-more:hover {
+    background-color:#F6B700;
+    color: black;
+}
+
+/* Efeito de hover no card */
+.card:hover {
+    transform: scale(1.05);
+}
+/*********CONTATO*****************/
+#contato{
+    background-color: #000;
+    
+}
+#contact-container{
+    display: flex;
+    justify-content:space-between;
+    gap: 10px;
+    overflow: hidden;
+    color:#fff ;
+}
+#contact-container img{
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+    max-width: 70%;
+}
+#contact-form{
+   margin: 50px;
+    max-width: 500px;
+}
