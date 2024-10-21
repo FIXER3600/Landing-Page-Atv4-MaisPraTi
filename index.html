@@ -32,16 +32,14 @@
     </div>
 </header>
 
-<section id="banner" class="swiper-container">
+<section id="banner" class="swiper-container swiper-banner">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
             <img src="./assets/dbz-banner.webp" alt="Banner 1" class="img-fluid">
-            <!-- Adicionando o contêiner da logo e botão -->
             <div class="logo-container-dbsz">
                 <img src="./assets/dbsz-logo.webp" alt="Dragon Ball Sparking Zero Logo" class="game-logo">
                 <a href="https://dragonballsparkingzero.com/" class="btn saiba-mais-btn-dbsz" target="_blank">Saiba Mais</a>
             </div>
-           
         </div>
         <div class="swiper-slide">
             <img src="./assets/naruto-patch.webp" alt="Banner 2" class="img-fluid">
@@ -51,7 +49,6 @@
         </div>
         <div class="swiper-slide">
             <img src="./assets/tekken8.png" alt="Banner 3" class="img-fluid">
-
             <div class="logo-container-tekken">
                 <a href="https://tekken.com/" class="btn saiba-mais-btn-tekken" target="_blank">Saiba Mais</a>
             </div>
@@ -64,15 +61,24 @@
 
 
 
+
 <section id="servicos" class="container my-5">
     <h2>Nossos Jogos</h2>
-    <div class="row" id="servicos-cards"></div>
+    <div class="row"  data-aos="fade-up" data-aos-duration="5000" id="servicos-cards"></div>
 </section>
 
-<section id="testemunhos" class="container my-5">
-    <h2>Testemunhos</h2>
-    <div id="testemunhos-list" class="row"></div>
+<section id="testemunhos" class="m-5" >
+    <h2 class="m-5">Testemunhos</h2>
+    <div  data-aos="fade-up" data-aos-duration="5000" style="display: flex; justify-content: center; margin: 0;"  >
+        <div  id="testemunhos-list" style="display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 40px;">
+            <!-- O conteúdo será inserido aqui via JavaScript -->
+        </div>
+    </div>
 </section>
+
+
+
 <section id="sobre" >
 
     <img src="./assets/about-purpose.png" alt=""><br/>
@@ -117,7 +123,7 @@
         <div class="d-flex">
             <div class="d-flex flex-column m-5">
                 <p class="text-white-50">
-                    <ul class="d-flex">
+                    <ul class="d-flex" style="list-style: none;">
                         <li class="mx-5"><a class="text-white-50" href="https://www.bandainamcoent.com/legal/terms">Terms of Service</a></li> 
                         <li class="mx-5"><a class="text-white-50" href="https://www.bandainamcoent.com/legal/privacy">Privacy Policy</a></li> 
                         <li class="mx-5"><a class="text-white-50" href="https://www.bandainamcoent.com/legal/community-events">Community Events</a></li> 
@@ -130,7 +136,7 @@
             </div>
             <div>
                 <h3 class="text-white">Siga-nos</h3>
-                <ul class="d-flex flex-column p-3" >
+                <ul class="d-flex flex-column p-3"  style="list-style: none;">
                     <li class="m-2"><a class="text-white-50" href="https://www.facebook.com/BandaiNamcoUS"><i class="fa-brands fa-facebook fa-2xl"></i></a></li> 
                     <li class="m-2"><a class="text-white-50" href="https://www.instagram.com/bandainamcous"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
                     <li class="m-2"><a class="text-white-50" href="https://twitter.com/BandaiNamcoUS"><i class="fa-brands fa-twitter fa-2xl"></i></a></li> 
@@ -147,5 +153,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="script.js"></script>
+<script src="sendEmailContact.js"></script>
 </body>
 </html>

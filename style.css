@@ -153,7 +153,13 @@ body {
     #servicos-cards {
 	display: flex;
 	flex-wrap: wrap;
-    }
+    justify-content: space-around; /* Isso garante espaçamento adequado entre os itens */
+}
+
+#servicos-cards > div {
+    flex: 0 0 calc(50% - 20px); /* Cada item ocupará 50% da largura menos um pequeno espaço */
+    margin-bottom: 20px; /* Espaçamento inferior para criar espaço entre as linhas */
+}
     #sobre{
       background-image: url('https://media.graphassets.com/FSsJAl3dSdGD9uNA86IC');  
       height: 100vh;
@@ -178,12 +184,7 @@ body {
     }
     
 /****************CARDS STYLES *********************/
-.servicos-cards {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+
 
 .card {
     background-size: cover; /* Garante que a imagem cubra todo o card */
@@ -207,6 +208,7 @@ body {
     color: white;
     padding: 20px;
     text-align: left;
+    margin-top: 10px;
 }
 
 .card-content h3 {
