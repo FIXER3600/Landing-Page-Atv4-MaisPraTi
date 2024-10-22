@@ -287,3 +287,31 @@ body {
    margin: 50px;
     max-width: 500px;
 }
+
+/*RESPONSIVIDADE*/
+#testemunhos-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+@media (max-width: 1080px) {
+    #testemunhos-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #servicos-cards{
+        flex-direction: column;
+    }
+    footer > div{
+        display: flex;
+        flex-direction: column;
+    }
+    #infos{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #follow-us-list li{
+      display: inline-block;
+    }
+}
