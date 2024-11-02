@@ -17,20 +17,46 @@
 </head>
 <body>
 
-<header class="bg-dark p-3">
-    <div class="container d-flex justify-content-between align-items-center">
-        <img src="assets/logo.png" alt="Logo" srcset="" id="logo">
-        <nav class="">
-            <ul class="d-flex justify-content-evenly list-unstyled" >
-                <li class="mx-5"><a class="text-white" href="#servicos" style="text-decoration: none;">Serviços</a></li>
-                <li class="mx-5"><a class="text-white" href="#testemunhos" style="text-decoration: none;">Testemunhos</a></li>
-                <li class="mx-5 "><a class="text-white" href="#sobre" style="text-decoration: none;">Sobre</a></li>
-                <li class="mx-5"><a class="text-white" href="#contato" style="text-decoration: none;">Contato</a></li>
+    <header class="bg-dark p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="assets/logo.png" alt="Logo" id="logo">
+
+            <!-- Botão do offcanvas -->
+            <button class="btn btn-dark d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="d-none d-lg-block"> <!-- Esconde nav em telas pequenas -->
+                <ul class="d-flex justify-content-evenly list-unstyled">
+                    <li class="mx-5"><a class="text-white" href="#servicos" style="text-decoration: none;">Serviços</a></li>
+                    <li class="mx-5"><a class="text-white" href="#testemunhos" style="text-decoration: none;">Testemunhos</a></li>
+                    <li class="mx-5"><a class="text-white" href="#sobre" style="text-decoration: none;">Sobre</a></li>
+                    <li class="mx-5"><a class="text-white" href="#contato" style="text-decoration: none;">Contato</a></li>
+                </ul>
+            </nav>
+
+            <a href="#contato" class="btn btn-orange d-none d-lg-block">Entre em Contato</a>
+        </div>
+    </header>
+
+    <!-- Estrutura do Offcanvas -->
+    <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white" id="offcanvasMenuLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-unstyled">
+                <li class="mb-3"><a class="text-white" href="#servicos" style="text-decoration: none;">Serviços</a></li>
+                <li class="mb-3"><a class="text-white" href="#testemunhos" style="text-decoration: none;">Testemunhos</a></li>
+                <li class="mb-3"><a class="text-white" href="#sobre" style="text-decoration: none;">Sobre</a></li>
+                <li class="mb-3"><a class="text-white" href="#contato" style="text-decoration: none;">Contato</a></li>
             </ul>
-        </nav>
-        <a href="#contato" class="btn btn-orange">Entre em Contato</a>
+        </div>
     </div>
-</header>
+
+    
+
 
 <section id="banner" class="swiper-container swiper-banner">
     <div class="swiper-wrapper">
@@ -80,7 +106,7 @@
 
 <section id="sobre" >
 
-    <img src="./assets/about-purpose.png" alt=""><br/>
+    <img src="./assets/about-purpose.png" alt="" id="about-logo"><br/>
     <p>A <strong>Bandai Namco</strong> existe para compartilhar sonhos, diversão e inspiração com pessoas ao redor do mundo.</p><br/>
       <p>A <strong>Bandai Namco</strong> é uma das principais empresas de entretenimento do mundo, reconhecida por criar franquias de sucesso global, como Pac-Man, Tekken, Dragon Ball e Dark Souls. Desde nossa formação, com a fusão da Bandai e Namco em 2006, temos expandido nossas atividades para além dos videogames, atuando também no desenvolvimento de brinquedos, animes e experiências em parques temáticos. Nosso compromisso é liderar a indústria do entretenimento, oferecendo inovação e diversão para pessoas de todas as idades ao redor do mundo.
       </p>
@@ -120,7 +146,7 @@
         </div>
 
         <div id="infos" class="d-flex">
-            <div class="d-flex flex-column m-5">
+            <div class="d-flex flex-column m-5" id="institutional">
                 <p class="text-white-50">
                     <ul class="d-flex" style="list-style: none;">
                         <li class="mx-5"><a class="text-white-50" href="https://www.bandainamcoent.com/legal/terms">Terms of Service</a></li> 
@@ -146,11 +172,10 @@
      
     </div>
 </footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.0/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="script.js"></script>
 <script src="sendEmailContact.js"></script>
 </body>
